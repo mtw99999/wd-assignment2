@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Web Development">
+    <meta name="keywords" content="Page 4">
+    <meta name="author" content="max">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Registration</title>
+</head>
+
+<body>
+    <header>
+        <h1>Account Registration</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="movies.html">View Movies</a></li>
+            <li><a href="recommend.html">Movie Recommendations</a></li>
+            <li><a href="register.html" class="current">Account Registration</a></li>
+            <li><a href="booking.html">Book Tickets</a></li>
+        </ul>
+    </nav>
+    <section>
+        <form id="regform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+            <fieldset>
+                <legend><h2>Account Information</h2></legend>
+                <div class="textinput">
+                    <label for="uname">Username</label>
+                    <input id="uname" type="text" name="uname">
+                </div>
+                <div class="textinput">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email">
+                </div>
+                <div class="textinput">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="tel" name="phone">
+                </div>
+                <div class="textinput">
+                    <label for="pwd1">Password</label>
+                    <input id="pwd1" type="password" name="pwd1">
+                </div>
+                <div class="textinput">
+                    <label for="pwd2">Retype Password</label>
+                    <input id="pwd2" type="password" name="pwd2">
+                </div>
+                <div class="radioinput">
+                    <span class="radiolabel">Gender</span>
+                    <label for="genm"><input id="genm" type="radio" name="gender" value="M">Male</label>
+
+                    <label for="genf">
+                    <input id="genf" type="radio" name="gender" value="F">Female</label>
+
+                    <label for="gennb">
+                    <input id="gennb" type="radio" name="gender" value="NB">Non-Binary</label>
+
+                    <label for="genp">
+                    <input id="genp" type="radio" name="gender" value="P">Prefer Not to Say</label>
+                </div>
+                <div class="checkbox">
+                    <p>Preffered Genre(s)</p>
+                    <ul>
+                        <li><label><input type="checkbox" class="movies-reg_genre" name="genre" value="action">
+                                Action</label></li>
+                        <li><label><input type="checkbox" class="movies-reg_genre" name="genre1" value="horror">
+                                Horror</label></li>
+                        <li><label><input type="checkbox" class="movies-reg_genre" name="genre2" value="sci-fi">
+                                Sci-Fi</label></li>
+                        <li><label><input type="checkbox" class="movies-reg_genre" name="genre3" value="fantasy">
+                                Fantasy</label></li>
+                        <li><label><input type="checkbox" class="movies-reg_genre" name="genre4" value="western">
+                                Western</label></li>
+                        <li><label><input type="checkbox" class="movies-reg_genre" name="genre5" value="romance">
+                                Romance</label></li>
+                        <li><label><input type="checkbox" class="movies-reg_genre" name="genre6" value="thriller">
+                                Thriller</label></li>
+                        <li><label><input type="checkbox" class="movies-reg_genre" name="genre7" value="comedy">
+                                Comedy</label></li>
+                        <li><label><input type="checkbox" class="movies-reg_genre" name="genre8" value="drama">
+                                Drama</label></li>
+                        <li><label><input type="checkbox" class="movies-reg_genre" name="genre9" value="sports">
+                                Sports</label></li>
+                        <li><label><input type="checkbox" class="movies-reg_genre" name="genre10" value="animation">
+                                Animation</label></li>
+                    </ul>
+                </div>
+                <div class="textinput">
+                    <label for="country">Enter Country</label>
+                    <input id="country" type="text" name="country">
+                </div>
+                <div class="textinput">
+                    <label for="region">Enter State/Region</label>
+                    <input id="region" type="text" name="Region">
+                </div>
+                <button type="submit">Register</button>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <p><em>Web Development Assignment 2</em></p>
+    </footer>
+</body>
+</html>

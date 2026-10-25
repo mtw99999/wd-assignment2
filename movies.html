@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Web Development">
+    <meta name="keywords" content="Page 2">
+    <meta name="author" content="max">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Movies</title>
+</head>
+
+<body>
+    <header>
+        <h1>Movie List</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="movies.html" class="current">View Movies</a></li>
+            <li><a href="recommend.html">Movie Recommendations</a></li>
+            <li><a href="register.html">Account Registration</a></li>
+            <li><a href="booking.html">Book Tickets</a></li>
+        </ul>
+    </nav>
+    <section>
+        <ul class="movies-list">
+            <li class="movies-list_item" data-movie="lilo-and-stitch">
+                <div class="movies-list_wrapper">
+                    <img class="movies-list_poster" src="images/liloandstitchposter.webp"
+                        alt="Lilo and Stitch Poster"><!-- Poster link Goes Here-->
+                    <div class="movies-list_copy">
+                        <h2 class="movies-list_heading">Lilo & Stitch</h2><!-- Title Goes Here-->
+                        <span class="movies-list_details">
+                            <span class="movies-list_genre">Sci-Fi Comedy Animation</span><!-- Genre(s) Goes Here-->
+                            <span class="movies-list__pipe">|</span>
+                            <span class="movies-list_rating">G</span><!-- Rating Goes Here-->
+                            <span class="movies-list_runtime">85 min</span><!-- Runtime Goes Here-->
+                            <span class="movies-list__pipe">|</span>
+                            <span class="movies-list_price">$15</span><!-- Ticket Price Goes Here-->
+                        </span>
+                        <span class="movies-list_description">A young and parentless girl adopts a 'dog' from the
+                            local pound, completely unaware that it's supposedly a dangerous scientific experiment
+                            that's taken refuge on Earth and is now hiding from its creator and those who see it as
+                            a menace.</span>
+                    </div>
+                </div>
+                <div class="sessions">
+                    <h3 class="sessions_date" data-date="2026-10-25">Today: 25/10/2026</h3>
+                    <ul class="sessions_list">
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="16:30">
+                                <span class="sessions_time">4:30pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="20:30">
+                                <span class="sessions_time">8:30pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="sessions_date" data-date="2026-10-26">Tomorrow: 26/10/2026</h3>
+                    <ul class="sessions_list">
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="14:00">
+                                <span class="sessions_time">2:00pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="18:00">
+                                <span class="sessions_time">6:00pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="movies-list_item" data-movie="project-hail-mary">
+                <div class="movies-list_wrapper">
+                    <img class="movies-list_poster" src="images/PHM.webp"
+                        alt="Project Hail Mary poster"><!-- Poster link Goes Here-->
+                    <div class="movies-list_copy">
+                        <h2 class="movies-list_heading">Project Hail Mary</h2><!-- Title Goes Here-->
+                        <span class="movies-list_details">
+                            <span class="movies-list_genre">Sci-Fi Comedy Drama</span><!-- Genre(s) Goes Here-->
+                            <span class="movies-list__pipe">|</span>
+                            <span class="movies-list_rating">M</span><!-- Rating Goes Here-->
+                            <span class="movies-list_runtime">156 min</span><!-- Runtime Goes Here-->
+                            <span class="movies-list__pipe">|</span>
+                            <span class="movies-list_price">$18</span><!-- Ticket Price Goes Here-->
+                        </span>
+                        <span class="movies-list_description">Middle school science teacher Ryland Grace (Ryan
+                            Gosling) wakes up on a spaceship light-years from home with no recollection of who he is
+                            or how he got there. As his memory returns, he begins to uncover his mission: to solve
+                            the riddle of the mysterious substance that is causing the sun to die out. He must call
+                            on his scientific knowledge and unorthodox ideas to save everything on Earth from
+                            extinction... but an unexpected friendship means he may not have to do it alone.</span>
+                    </div>
+                </div>
+                <div class="sessions">
+                    <h3 class="sessions_date" data-date="2026-10-25">Today: 25/10/2026</h3>
+                    <ul class="sessions_list">
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="12:00">
+                                <span class="sessions_time">12:00pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="19:00">
+                                <span class="sessions_time">7:00pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="sessions_date" data-date="2026-10-27">Tuesday: 27/10/2026</h3>
+                    <ul class="sessions_list">
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="17:30">
+                                <span class="sessions_time">5:30pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="movies-list_item" data-movie="the-first-slam-dunk">
+                <div class="movies-list_wrapper">
+                    <img class="movies-list_poster" src="images/first_slam_dunk.jpg"
+                        alt=""><!-- Poster link Goes Here-->
+                    <div class="movies-list_copy">
+                        <h2 class="movies-list_heading">The First Slam Dunk</h2><!-- Title Goes Here-->
+                        <span class="movies-list_details">
+                            <span class="movies-list_genre">Comedy Drama Sports
+                                Animation</span><!-- Genre(s) Goes Here-->
+                            <span class="movies-list__pipe">|</span>
+                            <span class="movies-list_rating">PG</span><!-- Rating Goes Here-->
+                            <span class="movies-list_runtime">124 min</span><!-- Runtime Goes Here-->
+                            <span class="movies-list__pipe">|</span>
+                            <span class="movies-list_price">$12</span><!-- Ticket Price Goes Here-->
+                        </span>
+                        <span class="movies-list_description">Haunted by the tragic loss of his elder brother,
+                            Miyagi Ryota, a teenager from Okinawa, Japan, struggles to grapple with questions about
+                            self-worth and life's purpose while immersing himself in basketball, the sport he and
+                            his brother shared a passion for. Widely viewed as underdogs, Ryota and his Shohoku High
+                            School teammates bravely take on a much more talented squad in their quest for
+                            recognition and glory. What lies ahead after their first slam dunk in the up-hill
+                            fight?</span>
+                    </div>
+                </div>
+                <div class="sessions">
+                    <h3 class="sessions_date" data-date="2026-10-26">Tomorrow: 26/10/2026</h3>
+                    <ul class="sessions_list">
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="15:00">
+                                <span class="sessions_time">3:00pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="21:00">
+                                <span class="sessions_time">9:00pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="sessions_date" data-date="2026-10-27">Tuesday: 27/10/2026</h3>
+                    <ul class="sessions_list">
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="13:00">
+                                <span class="sessions_time">1:00pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="19:30">
+                                <span class="sessions_time">7:30pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="movies-list_item" data-movie="little-miss-sunshine">
+                <div class="movies-list_wrapper">
+                    <img class="movies-list_poster" src="images/LMS.webp"
+                        alt="Little miss sunshine poster"><!-- Poster link Goes Here-->
+                    <div class="movies-list_copy">
+                        <h2 class="movies-list_heading">Little Miss Sunshine</h2><!-- Title Goes Here-->
+                        <span class="movies-list_details">
+                            <span class="movies-list_genre">Comedy Drama</span><!-- Genre(s) Goes Here-->
+                            <span class="movies-list__pipe">|</span>
+                            <span class="movies-list_rating">M</span><!-- Rating Goes Here-->
+                            <span class="movies-list_runtime">101 min</span><!-- Runtime Goes Here-->
+                            <span class="movies-list__pipe">|</span>
+                            <span class="movies-list_price">$16</span><!-- Ticket Price Goes Here-->
+                        </span>
+                        <span class="movies-list_description">When 7 year-old Olive Hoover learns that she's
+                            qualified for the the little Miss Sunshine contest the entire family sets off in their
+                            VW camper van for the trip from Albuquerque to California. The family includes her
+                            reasonably sane mother Sheryl; her father Richard, a motivational speaker who is
+                            stressing over whether his book will be published; her brother Dwayne who is into
+                            Nietzsche and has taken a vow of silence and hasn't said a word in 9 months; her grandpa
+                            Edwin Hoover who likes to cuss; and her uncle Frank Ginsburg - Sheryl's brother - who
+                            recently tried to commit suicide. Along the way, the van breaks down, Richard learns his
+                            book won't be published and they forget Olive at a gas station. They face grief along
+                            the way but they get Olive to the pageant on time - even if the pageant itself doesn't
+                            quite go as planned.
+                        </span>
+                    </div>
+                </div>
+                <div class="sessions">
+                    <h3 class="sessions_date" data-date="2026-10-25">Today: 25/10/2026</h3>
+                    <ul class="sessions_list">
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="10:30">
+                                <span class="sessions_time">10:30am</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="12:45">
+                                <span class="sessions_time">12:45pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="sessions_date" data-date="2026-10-27">Tuesday: 27/10/2026</h3>
+                    <ul class="sessions_list">
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="12:30">
+                                <span class="sessions_time">12:30pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="17:00">
+                                <span class="sessions_time">5:00pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="movies-list_item" data-movie="resident-evil">
+                <div class="movies-list_wrapper">
+                    <img class="movies-list_poster" src="images/resident_evil.jpg"
+                        alt="Resident Evil poster"><!-- Poster link Goes Here-->
+                    <div class="movies-list_copy">
+                        <h2 class="movies-list_heading">Resident Evil</h2><!-- Title Goes Here-->
+                        <span class="movies-list_details">
+                            <span class="movies-list_genre">Horror Sci-Fi Comedy</span><!-- Genre(s) Goes Here-->
+                            <span class="movies-list__pipe">|</span>
+                            <span class="movies-list_rating">MA15+</span><!-- Rating Goes Here-->
+                            <span class="movies-list_runtime">94 min</span><!-- Runtime Goes Here-->
+                            <span class="movies-list__pipe">|</span>
+                            <span class="movies-list_price">$20</span><!-- Ticket Price Goes Here-->
+                        </span>
+                        <span class="movies-list_description">A hapless courier is tasked with delivering a package
+                            to a remote hospital. He soon finds himself caught in the middle of an outbreak and must
+                            fight through hordes of mutated creatures to survive.
+                        </span>
+                    </div>
+                </div>
+                <div class="sessions">
+                    <h3 class="sessions_date" data-date="2026-10-25">Today: 25/10/2026</h3>
+                    <ul class="sessions_list">
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="17:00">
+                                <span class="sessions_time">5:00pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="19:00">
+                                <span class="sessions_time">7:00pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="sessions_date" data-date="2026-10-26">Tomorrow: 26/10/2026</h3>
+                    <ul class="sessions_list">
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="15:00">
+                                <span class="sessions_time">3:00pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="21:00">
+                                <span class="sessions_time">9:00pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 class="sessions_date" data-date="2026-10-27">Tuesday: 27/10/2026</h3>
+                    <ul class="sessions_list">
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="13:30">
+                                <span class="sessions_time">1:30pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="20:00">
+                                <span class="sessions_time">8:00pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="movies-list_item" data-movie="look-back">
+                <div class="movies-list_wrapper">
+                    <img class="movies-list_poster" src="images/look_back.jpg"
+                        alt="Look Back poster"><!-- Poster link Goes Here-->
+                    <div class="movies-list_copy">
+                        <h2 class="movies-list_heading">Look Back</h2><!-- Title Goes Here-->
+                        <span class="movies-list_details">
+                            <span class="movies-list_genre">Comedy Drama Animation</span><!-- Genre(s) Goes Here-->
+                            <span class="movies-list__pipe">|</span>
+                            <span class="movies-list_rating">PG</span><!-- Rating Goes Here-->
+                            <span class="movies-list_runtime">58 min</span><!-- Runtime Goes Here-->
+                            <span class="movies-list__pipe">|</span>
+                            <span class="movies-list_price">$10</span><!-- Ticket Price Goes Here-->
+                        </span>
+                        <span class="movies-list_description">The overly confident Fujino and the shut-in Kyomoto
+                            couldn't be more different, but a love of drawing manga brings these two small-town
+                            girls together.</span>
+                    </div>
+                </div>
+                <div class="sessions">
+                    <h3 class="sessions_date" data-date="2026-10-26">Tomorrow: 26/10/2026</h3>
+                    <ul class="sessions_list">
+                        <li class="sessions_item">
+                            <a class="sessions_item_link" href="booking.html" data-time="16:30">
+                                <span class="sessions_time">4:30pm</span><!-- Session Time Goes Here-->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <p><em>Web Development Assignment 2</em></p>
+    </footer>
+</body>
+
+</html>

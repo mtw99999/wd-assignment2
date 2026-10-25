@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Web Development">
+    <meta name="keywords" content="Page 5">
+    <meta name="author" content="max">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Booking</title>
+</head>
+
+<body>
+    <header>
+        <h1>Book Tickets</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="movies.html">View Movies</a></li>
+            <li><a href="recommend.html">Movie Recommendations</a></li>
+            <li><a href="register.html">Account Registration</a></li>
+            <li><a href="booking.html" class="current">Book Tickets</a></li>
+        </ul>
+    </nav>
+    <section>
+        <form id="booking-form" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+            <div class="container">
+                <fieldset>
+                    <legend><h2>Buy Tickets</h2></legend>
+                    <div class="textinput">
+                        <label for="Fname">Full Name</label>
+                        <input id="Fname" type="text" name="Fname" required="required">
+                    </div>
+                    <div class="textinput">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" required="required">
+                    </div>
+                    <div class="textinput">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" type="tel" name="phone" placeholder="Numbers only">
+                    </div>
+                    <div class="dropinput">
+                        <label for="movie">Select a Movie</label>
+                        <select id="movie" name="movie">
+                            <option value="N" disabled selected>Choose a movie</option>
+                        </select>
+                    </div>
+
+                    <div class="dropinput">
+                        <label for="date">Select a Date</label>
+                        <select id="date" name="date" required>
+                            <option value="" disabled selected>Choose a date</option>
+                        </select>
+                    </div>
+
+                    <div class="dropinput">
+                        <label for="time">Select a Time</label>
+                        <select id="time" name="time" required>
+                            <option value="" disabled selected>Choose a time</option>
+                        </select>
+                    </div>
+
+                    <div class="textinput">
+                        <label for="tickets">Tickets</label>
+                        <input id="tickets" type="number" name="tickets" min="1" max="10" value="1" required>
+                    </div>
+
+                    <div class="dropinput">
+                        <label for="ticket-type">Select Ticket Type</label>
+                        <select id="ticket-type" name="type">
+                            <option value="adult">Adult</option>
+                            <option value="child">Child</option>
+                            <option value="student">Student</option>
+                        </select>
+                    </div>
+                    <div class="priceinfo">
+                        <p>Price per ticket: <span id="unit-price">$0.00</span></p>
+                        <p>Total: <strong id="total-price">$0.00</strong></p>
+                    </div>
+                    <div class="dropinput">
+                        <label for="payment">Payment Method</label>
+                        <select id="payment" name="payment">
+                            <option value="V">Voucher</option>
+                            <option value="O">Online Payment</option>
+                        </select>
+                    </div>
+                    <div class="textinput">
+                        <label for="voucher">Enter Voucher Code</label>
+                        <input id="voucher" type="text" name="voucher" maxlength="14" inputmode="numeric"
+                            placeholder="XXXX-XXXX-XXXX">
+                    </div>
+                    <div id="card-details">
+                        <div class="dropinput">
+                            <label for="card-type">Card Type</label>
+                            <select id="card-type" name="card-type">
+                                <option value="visa">Visa</option>
+                                <option value="mastercard">Mastercard</option>
+                                <option value="amex">American Express</option>
+                            </select>
+                        </div>
+                        <div class="textinput">
+                            <label for="cc">Card Number</label>
+                            <input id="cc" type="text" name="card" autocomplete="cc-number" placeholder="16 digits">
+
+                        </div>
+                        <div class="textinput">
+                            <label for="cc_name">Full Name</label>
+                            <input id="cc_name" type="text" name="cardname" autocomplete="cc-name"
+                                placeholder="Name as Shown on card">
+                        </div>
+                        <div class="textinput">
+                            <label for="cc_exp">Expiry Date</label>
+                            <input id="cc_exp" type="text" name="cc_exp" placeholder="MM / YYYY" autocomplete="cc-exp"
+                                required>
+                        </div>
+                        <div class="textinput">
+                            <label for="cvv">CVV</label>
+                            <input id="cvv" type="text" name="cvv" inputmode="numeric" maxlength="4"
+                                autocomplete="cc-csc" placeholder="3 digits">
+                        </div>
+                    </div>
+                    <div class="textinput">
+                        <label for="billing">Billing Email</label>
+                        <input id="billing" type="email" name="bemail" required="required">
+                        <label class="checkbox-label">
+                            <input id="same-email" type="checkbox">
+                            Same as email address
+                        </label>
+                    </div>
+                    <button type="submit">Book Tickets</button>
+                </fieldset>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p><em>Web Development Assignment 2</em></p>
+    </footer>
+</body>
+</html>

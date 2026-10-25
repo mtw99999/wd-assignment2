@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Web Development">
+    <meta name="keywords" content="Page 3">
+    <meta name="author" content="max">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Movie Recommendations</title>
+</head>
+<body>
+    <header>
+        <h1>Movie Recommendations</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="movies.html">View Movies</a></li>
+            <li><a href="recommend.html" class="current">Movie Recommendations</a></li>
+            <li><a href="register.html">Account Registration</a></li>
+            <li><a href="booking.html">Book Tickets</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="container">
+            <form id="recommend-form">
+                <fieldset>
+                    <legend><h2>Find a Movie</h2></legend>
+                    <div class="dropinput">
+                        <label for="rec-genre">Preferred Genre</label>
+                        <select id="rec-genre" name="genre" required>
+                            <option value="" disabled selected>Choose a genre</option>
+                            <option value="action">Action</option>
+                            <option value="horror">Horror</option>
+                            <option value="sci-fi">Sci-Fi</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="western">Western</option>
+                            <option value="romance">Romance</option>
+                            <option value="thriller">Thriller</option>
+                            <option value="comedy">Comedy</option>
+                            <option value="drama">Drama</option>
+                            <option value="sports">Sports</option>
+                            <option value="animation">Animation</option>
+                        </select>
+                    </div>
+                    <div class="dropinput">
+                        <label for="rec-age">Age Group</label>
+                        <select id="rec-age" name="age" required>
+                            <option value="" disabled selected>Choose an age group</option>
+                            <option value="child">Child</option>
+                            <option value="teen">Teen</option>
+                            <option value="adult">Adult</option>
+                        </select>
+                    </div>
+                    <div class="dropinput">
+                        <label for="rec-viewing">Viewing Preference</label>
+                        <select id="rec-viewing" name="viewing" required>
+                            <option value="" disabled selected>Choose a preference</option>
+                            <option value="family">Family</option>
+                            <option value="date">Date Night</option>
+                            <option value="friends">Friends</option>
+                            <option value="solo">Solo</option>
+                        </select>
+                    </div>
+                    <button type="submit">Recommend Movies</button>
+                </fieldset>
+            </form>
+            <div id="recommend-results" aria-live="polite"></div>
+        </div>
+    </section>
+    <footer>
+        <p><em>Web Development Assignment 2</em></p>
+    </footer>
+</body>
+</html>

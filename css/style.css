@@ -1,0 +1,455 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1d1d1d;
+    margin: 0;
+    padding: 0 35px;
+    user-select: none
+}
+
+header {
+    color: #ff291a;
+    font-size: 120%;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav li {
+    flex: 1;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #470000;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    border-left: 1px solid #1d1d1d;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a.current {
+    font-weight: bold;
+    background-color: #ff291a;
+}
+
+nav a:hover {
+    background-color: #470000;
+}
+
+.about article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 10px 10px 2rem;
+}
+
+.about h2 {
+    flex: 0 0 100%;
+    margin: 0;
+    color: #ff291a;
+}
+.about_img {
+    display: block;
+    width: calc(100% - 20px);   
+    height: auto;
+    object-fit: fill;         
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.card {
+    background-color: #3b3b3b;
+    border-radius: 4px;
+    padding: 1rem;
+    color: #ccc;
+    flex: 1;
+}
+
+.card h3 {
+    margin: 0 0 0.5rem;
+    color: #ccc;
+}
+
+.card p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+form {
+    background-color: #3b3b3b;
+}
+
+legend {
+    color: #ccc;
+}
+
+fieldset {
+    border: none;
+    margin: 10px;
+}
+
+.textinput {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.textinput label {
+    width: 150px;
+    flex-shrink: 0;
+    color: #ccc;
+}
+
+.textinput input {
+    background-color: #4c4c4c;
+    border: none;
+    color: white;
+}
+
+.textinput input::placeholder {
+    color: #bbb;
+}
+
+.textinput .checkbox-label {
+    width: auto;
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+.textinput[hidden] {
+    display: none;
+}
+
+.movies-list {
+    background-color: #3b3b3b;
+    margin: 10px;
+}
+
+.movies-list_item {
+    list-style: none;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.movies-list_wrapper {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.movies-list_poster {
+    flex: 0 0 auto;
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.movies-list_heading {
+    margin: 0 0 0.4rem;
+    color: #ff291a;
+}
+
+.movies-list_details {
+    display: block;
+    margin-bottom: 0.75rem;
+    color: #bbb;
+}
+
+.movies-list__pipe {
+    margin: 0 0.4rem;
+    color: #666;
+}
+
+.movies-list_description {
+    display: block;
+    line-height: 1.5;
+    max-width: 60ch;
+}
+
+.sessions_date {
+    margin: 1.25rem 0 0.5rem;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.sessions_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.sessions_item_link {
+    display: block;
+    padding: 0.4em 1em;
+    color: white;
+    text-decoration: none;
+    background-color: #470000;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.sessions_item_link:hover {
+    background-color: #a12117;
+}
+
+.dropinput {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.dropinput label {
+    width: 150px;
+    flex-shrink: 0;
+    color: #ccc;
+}
+
+.dropinput select {
+    background-color: #4c4c4c;
+    border: none;
+    color: #bbb;
+}
+
+.dropinput option {
+    color: white;
+    background-color: #ff291a;
+}
+
+.radioinput {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: none;
+    padding: 10px;
+    margin: 0;
+    color: #ccc;
+}
+
+.radioinput label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.radioinput input[type="radio"] {
+    margin: 0;
+}
+
+.priceinfo {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+}
+
+.priceinfo p {
+    color: #ccc;
+}
+
+.checkbox ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.checkbox input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+button {
+    display: block;
+    padding: 0.4em 1em;
+    color: white;
+    background-color: #470000;
+    border: none;
+    border-radius: 4px;
+    font: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:focus-visible {
+    outline: 2px solid #ff291a;
+    outline-offset: 2px;
+}
+
+button:hover {
+    background-color: #a12117;
+}
+
+#recommend-results {
+    color: #ccc;
+}
+
+#recommend-results h3 {
+    color: #ff291a;
+    margin: 0 0 0.25rem;
+}
+
+#recommend-results article {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    background-color: #3b3b3b;
+    border-radius: 4px;
+}
+
+#recommend-results a {
+    display: inline-block;
+    padding: 0.4em 1em;
+    color: white;
+    text-decoration: none;
+    background-color: #470000;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#recommend-results a:hover {
+    background-color: #a12117;
+}
+
+.checkbox p {
+    color: #ccc;
+}
+
+footer {
+    margin-top: 0.2em;
+    color: #ccc;
+}
+
+@media (max-width: 767px) {
+    body {
+        padding: 0 12px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-left: none;
+        border-top: 1px solid #1d1d1d;
+        padding: 0.6em;
+    }
+
+    .about_img {
+        height: 180px;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 0.5rem);
+    }
+
+    .textinput,
+    .dropinput {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .textinput label,
+    .dropinput label {
+        width: auto;
+        margin-bottom: 0.25rem;
+    }
+
+    .textinput input,
+    .dropinput select {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.5rem;
+    }
+
+    .textinput .checkbox-label {
+        margin-left: 0;
+    }
+
+
+    .movies-list_wrapper {
+        flex-direction: column;
+    }
+
+    .movies-list_poster {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .sessions_item_link {
+        padding: 0.6em 1.2em;
+    }
+
+    button,
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    #recommend-results button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1023px) {
+    body {
+        padding: 0 20px;
+    }
+
+    .textinput label,
+    .dropinput label {
+        width: 120px;
+    }
+
+    .about article {
+        flex-direction: column;
+    }
+
+    .about_img { 
+        height: 280px;
+    }
+
+    .card {
+        flex: none;
+    }
+
+    .textinput .checkbox-label {
+        margin-left: 120px;
+    }
+
+    .movies-list_poster {
+        width: 160px;
+    }
+
+    #recommend-results {
+        max-width: 100%;
+    }
+}
